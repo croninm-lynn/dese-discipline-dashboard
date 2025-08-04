@@ -1,12 +1,13 @@
 {
   "name": "discipline-dashboard",
   "version": "0.1.0",
+  "homepage": "https://croninm-lynn.github.io/discipline-dashboard",
   "private": true,
   "dependencies": {
+    "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recharts": "^2.8.0",
-    "papaparse": "^5.4.1"
+    "recharts": "^2.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,5 +29,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
